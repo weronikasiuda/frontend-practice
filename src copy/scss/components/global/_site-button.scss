@@ -1,0 +1,10 @@
+.site__button {
+  margin: 1.5rem 0;
+  &-btn {
+    font-family: Calibri, sans-serif;
+    color: $white;
+    padding: 1rem;
+    background-color: $blue;
+    border-radius: 10px;
+  }
+}

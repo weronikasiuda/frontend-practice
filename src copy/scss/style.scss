@@ -1,0 +1,21 @@
+// Styles
+
+// @import 'functions';
+@import "variables";
+@import "mixins";
+@import "resets";
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/card";
+
+// @import 'mixins/foo';
+// @import 'mixins/bar';
+
+// @import 'components/foo';
+// @import 'components/bar';
+
+@import "components/global/header";
+@import "components/global/site-button";
+@import "components/home/home-banner";
+@import "components/home/home-cards-triple-cta";
+@import "components/home/home-introduction";

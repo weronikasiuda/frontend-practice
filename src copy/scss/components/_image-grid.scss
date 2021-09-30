@@ -1,0 +1,21 @@
+.image__grid {
+  @extend .container;
+
+  .grid__item {
+    @extend .row;
+
+    &-left {
+      @extend .col-md-6;
+      @extend .order-1;
+    }
+    &-right {
+      @extend .col-md-6;
+      @extend .order-2;
+    }
+
+    &-img {
+      @extend .img-fluid;
+      @extend .rounded;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/*Fonts*/
+
+@mixin font {
+  font-family: Calibri, sans-serif;
+  font-weight: 600;
+}
+@mixin make-container() {
+  width: 100%;
+  padding-right: ($grid-gutter-width);
+  padding-left: ($grid-gutter-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin blue-btn {
+  font-family: Calibri, sans-serif;
+  color: $white;
+  padding: 0.7em 1.1em;
+  margin: 0.5em;
+  background-color: $blue;
+  border-radius: 10px;
+}
+
+@mixin background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+/*Media*/
+
+// Breakpoints every n pixels; round max widths to prevent min width overlap
+$media-breakpoint-increment: 160px !default;
+$media-breakpoint-round: 1px !default;
+
+// Named breakpoints, like Bootstrap
+$media-breakpoints: (
+  xs: 0,
+  vs: 360px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xx: 1440px,
+) !default;
+
+// Numbered breakpoints
+// $breakpoints: (
+//   1: 0,
+//   2: 360px,
+//   3: 576px,
+//   4: 768px,
+//   5: 992px,
+//   6: 1200px,
+//   7: 1440px,
+// );
+
+// Sanitize breakpoint value
+@function sanitize-media-breakpoint($breakpoint, $round-down: false) {
+  @if type-of($breakpoint) ==
+    "string" and
+    map-get($media-breakpoints, $breakpoint)
+  {
+    $breakpoint: map-get($media-breakpoints, $breakpoint);
+  }
+
+  @if type-of($breakpoint) != "number" or $breakpoint == 0 {
+    @return 0;
+  }
+
+  @if unitless($breakpoint) {
+    $breakpoint: $breakpoint * $media-breakpoint-increment;
+
+    @if $round-down and comparable($breakpoint, $media-breakpoint-round) {
+      $breakpoint: $breakpoint - $media-breakpoint-round;
+    }
+  }
+
+  @return $breakpoint;
+}
+
+// Return complete media query, with optional media type and arbitrary
+// additional media query rules.
+@mixin media-query($min: null, $max: null, $media: all, $after: null) {
+  $media-query: $media;
+  $min: sanitize-media-breakpoint($min);
+  $max: sanitize-media-breakpoint($max, true);
+
+  @if $min != 0 {
+    $media-query: "#{$media-query} and (min-width: #{$min})";
+  }
+
+  @if $max != 0 {
+    $media-query: "#{$media-query} and (max-width: #{$max})";
+  }
+
+  @if type-of($after) {
+    $media-query: "#{$media-query} #{$after}";
+  }
+
+  @media #{$media-query} {
+    @content;
+  }
+}

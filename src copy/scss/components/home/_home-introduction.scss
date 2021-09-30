@@ -1,0 +1,56 @@
+.introduction {
+  &__wrapper {
+    @extend .container;
+  }
+  &-item {
+    @extend .row;
+    @extend .justify-content-center;
+  }
+
+  .item {
+    &-inner {
+      @extend .row;
+    }
+    &-text {
+      @extend .col-lg-5;
+      font-size: 0.8em;
+    }
+    &-image {
+      @extend .col-lg-5;
+    }
+    &-subtitle {
+      @include font;
+      font-size: 1.5em;
+      color: $grey-blue;
+    }
+    &-paragraph {
+      background-color: blue;
+    }
+  }
+
+  .image-senior {
+    width: 400px;
+    height: 400px;
+    @include background-image;
+    background-image: url("/content/stock/senior1.jpeg");
+  }
+
+  .image-group {
+    //change names and use modifier to differentiate backgrounds
+    width: 400px;
+    height: 400px;
+    @include background-image;
+    background-image: url("/content/stock/group.jpeg");
+  }
+
+  .item-text-right {
+    //introduction with modifier for L and R
+
+    // @extend .col-4;
+    // padding: 5em 0 5em 5em;
+  }
+  .item-text-left {
+    // @extend .col-4;
+    background-color: red;
+  }
+}

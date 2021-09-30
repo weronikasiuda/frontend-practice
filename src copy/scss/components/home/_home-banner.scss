@@ -1,0 +1,39 @@
+.banner {
+  padding: 7em 0 7em 0;
+  background-image: url("/content/hp-banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    @extend .container;
+    // @extend .h-100;
+
+    &-inner {
+      @extend .row;
+      // @extend .h-100;
+      // @extend .d-flex;
+      // @extend .align-items-center;
+      // @extend .justify-content-start;
+    }
+  }
+
+  &__content {
+    @extend .col-sm-12;
+    @extend .col-md-6;
+    @extend .text-left;
+    color: $grey-blue;
+    padding: 2em;
+    background-color: rgba(243, 208, 62, 0.9);
+    border-radius: 20px;
+  }
+  &__text {
+    &-h {
+      font-size: 1.8em;
+      margin-bottom: 1.5em;
+      @include media-breakpoint-between(xs, sm) {
+        font-size: 1em;
+      }
+    }
+  }
+}
