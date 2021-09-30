@@ -3,8 +3,8 @@
 // include $_SERVER['DOCUMENT_ROOT'] . '/includes/functions.php';
 // include $_SERVER['DOCUMENT_ROOT'] . '/includes/config.php';
 
-$title       = 'Community First Yorkshire';
-$description = 'Community First Yorkshire - coding task';
+$title       = 'Leeds Cake Company';
+$description = 'Leeds Cake Company';
 
 ?>
 <!DOCTYPE html>

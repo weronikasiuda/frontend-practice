@@ -1,10 +1,12 @@
 .introduction {
+  background-color: $yellow;
   &__wrapper {
     @extend .container;
   }
   &-item {
     @extend .row;
     @extend .justify-content-center;
+    padding: 2em 0;
   }
 
   .item {
@@ -21,26 +23,25 @@
     &-subtitle {
       @include font;
       font-size: 1.5em;
-      color: $grey-blue;
+      color: $brown;
     }
     &-paragraph {
-      background-color: blue;
     }
   }
 
-  .image-senior {
+  .image-one {
     width: 400px;
     height: 400px;
     @include background-image;
-    background-image: url("/content/stock/senior1.jpeg");
+    background-image: url("/content/donuts.jpg");
   }
 
-  .image-group {
+  .image-two {
     //change names and use modifier to differentiate backgrounds
     width: 400px;
     height: 400px;
     @include background-image;
-    background-image: url("/content/stock/group.jpeg");
+    background-image: url("/content/donuts.jpg");
   }
 
   .item-text-right {
@@ -51,6 +52,5 @@
   }
   .item-text-left {
     // @extend .col-4;
-    background-color: red;
   }
 }

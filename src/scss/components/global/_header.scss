@@ -1,51 +1,48 @@
 .header {
   /*links to sign up, login, register */
   &__upper {
-    // @extend .container-fluid;
-    background-color: $blue;
-    // @include media-breakpoint-up(md) {
-    //   padding-right: 3em;
-    // }
-    // @include media-breakpoint-up(xl) {
-    //   @include make-container(20em);
-    // }
+    @extend .container-fluid;
+    background-color: $brown;
+    @include media-breakpoint-up(md) {
+      padding-right: 3em;
+    }
+    @include media-breakpoint-up(xl) {
+      @include make-container(20em);
+    }
 
     &-wrapper {
       @include font;
       @include media-breakpoint-up(xs) {
         font-size: 0.8em;
       }
-      // @extend .row;
-      // @extend .justify-content-center;
+      @extend .row;
+      @extend .justify-content-center;
       @extend .text-center;
     }
   }
   &__join {
-    // @extend .col-6;
-    // @extend .col-sm-6;
-    // @extend .col-md-2;
+    @extend .col-6;
+    @extend .col-md-2;
     @extend .order-md-2;
-    // padding: 0.7em;
-    background-color: $blue;
+    padding: 0.7em;
+    background-color: $orange;
   }
   &__news {
-    // @extend .col-12;
-    // @extend .col-sm-12;
-    // @extend .col-md-8;
+    @extend .col-12;
+    @extend .col-md-8;
     @extend .order-md-1;
-    // padding: 0.7em;
-    background-color: $blue;
+    padding: 0.7em;
+    background-color: $orange;
     @include media-breakpoint-down(sm) {
       border-bottom: 0.5px white solid;
     }
   }
   &__login {
-    // @extend .col-6;
-    // @extend .col-sm-6;
-    // @extend .col-md-2;
+    @extend .col-6;
+    @extend .col-md-2;
     @extend .order-md-3;
-    // padding: 0.7em;
-    background-color: $green;
+    padding: 0.7em;
+    background-color: $yellow;
   }
 
   &__link {
@@ -54,52 +51,53 @@
 
   /*second row - logo, contact, menu*/
   &__lower {
-    // @extend .container-fluid;
-    // @include media-breakpoint-up(xl) {
-    //   @include make-container(20em);
-    // }
+    @extend .container-fluid;
+    @include media-breakpoint-up(xl) {
+      @include make-container(20em);
+    }
+    background-color: $beige;
 
     &-wrapper {
-      //   @extend .row;
-      //   display: flex;
-      //   flex-wrap: wrap;
-      //   align-items: center;
-      //   @include media-breakpoint-between(xs, s) {
-      //     padding-top: 0.5em;
-      //   }
-      //   @include media-breakpoint-between(md, lg) {
-      //     padding-top: 1em;
-      //     padding-right: 2em;
-      //   }
+      @extend .row;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @include media-breakpoint-between(xs, s) {
+        padding-top: 0.5em;
+      }
+      @include media-breakpoint-between(md, lg) {
+        padding-top: 1em;
+        padding-right: 2em;
+      }
     }
   }
   &__logo {
-    // @extend .col-8;
+    @extend .col-8;
     @extend .order-md-1;
-    // padding-left: 3em;
+    padding-left: 3em;
 
     &-img {
       @include media-breakpoint-only(xs) {
-        width: 4em;
+        width: 2em;
       }
       @include media-breakpoint-only(sm) {
-        width: 6em;
+        width: 3em;
       }
       @include media-breakpoint-only(md) {
-        width: 8em;
+        width: 4em;
       }
       @include media-breakpoint-only(lg) {
-        width: 10em;
+        width: 5em;
       }
       @include media-breakpoint-only(xl) {
-        width: 12em;
+        width: 6em;
       }
     }
   }
 
   &__contact {
-    // @extend .col-sm-12;
-    // @extend .col-md-4;
+    @extend .col-sm-12;
+    @extend .col-md-4;
     @extend .order-md-2;
 
     .contact-list {
@@ -116,18 +114,17 @@
 
     .contact-link {
       @include font;
-      color: $grey-blue;
+      color: $brown;
       letter-spacing: 0.01em;
     }
   }
   &__nav {
-    // @extend .col-4;
-    // @extend .col-md-12;
+    @extend .col-4;
+    @extend .col-md-12;
     @extend .order-md-3;
     @extend .navbar;
     @extend .navbar-expand-md;
     width: 100%;
-    // padding-top: 1.3em;
   }
 
   &__menu-wrapper {
@@ -145,12 +142,12 @@
 
     &__item {
       @extend .nav-item;
-      // @include media-breakpoint-between(xs, md) {
-      //   padding-right: 0.3em;
-      // }
-      // @include media-breakpoint-up(lg) {
-      //   padding-right: 0.8em;
-      // }
+      @include media-breakpoint-between(xs, md) {
+        padding-right: 0.3em;
+      }
+      @include media-breakpoint-up(lg) {
+        padding-right: 0.8em;
+      }
     }
 
     &__link {
@@ -173,7 +170,7 @@
         width: 0%;
         height: 4px;
         bottom: 0;
-        background-color: $green;
+        background-color: $orange;
       }
       &:hover {
         &:before {

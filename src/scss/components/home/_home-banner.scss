@@ -1,6 +1,6 @@
 .banner {
   padding: 7em 0 7em 0;
-  background-image: url("/content/hp-banner.jpeg");
+  background-image: url("/content/chocolate-cake.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,9 +22,9 @@
     @extend .col-sm-12;
     @extend .col-md-6;
     @extend .text-left;
-    color: $grey-blue;
+    color: $brown;
     padding: 2em;
-    background-color: rgba(243, 208, 62, 0.9);
+    background-color: $yellow;
     border-radius: 20px;
   }
   &__text {

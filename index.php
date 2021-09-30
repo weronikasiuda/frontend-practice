@@ -10,8 +10,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 ?>
 
 <div class="banner">
-<div class="banner__wrap">
-    <div class="banner__wrap-inner">
+<div class="banner__wrapper">
+    <div class="banner__wrapper-inner">
       <div class="banner__content">
         <h1 class="banner__text-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h1>
         <p class="site__button"><a href="" class="site__button-btn">Explore our cakes</a></p>
@@ -21,8 +21,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div> 
 
 <div class="cards">
-    <div class="cards__wrap">
-        <div class="cards__wrap-inner">
+    <div class="cards__wrapper">
+        <div class="cards__wrapper-inner">
 
             <div class="card-item">
                 <div class="card-body">
@@ -35,7 +35,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                     <h2 class="card-title">Explore our brownies</h2>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
                 </div>
-                <a href="#" class="card-link  link-yellow">See how we connect voices</a>
+                <a href="#" class="card-link  link-yellow">Explore our brownies lorem ipsum</a>
             </div> 
 
             <div class="card-item">
@@ -71,11 +71,11 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div>
 
 <div class="introduction">
-    <div class="introduction__wrap">
-        <div class="introduction__wrap-inner">
+    <div class="introduction__wrapper">
+        <div class="introduction__wrapper-inner">
 
                 <div class="introduction-item">
-                        <div class="item-image image-senior">
+                        <div class="item-image image-one">
                         </div>
                         <div class="item-text item-text-right">
                             <h3 class="item-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.</h3>
@@ -90,7 +90,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
                             <p class="site__button"><a href="" class="site__button-btn">Get a cake</a></p>
                         </div>
-                        <div class="item-image image-one"></div>
+                        <div class="item-image image-two"></div>
                 </div>
 
         </div>
@@ -98,10 +98,10 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div>
 
 <div class="campaigns">
-    <div class="campaigns__wrap">
-        <div class="campaigns__wrap-inner">
+    <div class="campaigns__wrapper">
+        <div class="campaigns__wrapper-inner">
 
-                <div class="subsection__wrap">
+                <div class="subsection__wrapper">
                     <div class="section__title">
                         <h2 class="section__title-h">Our latest workshops</h2>
                     </div>
@@ -132,7 +132,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         <div class="campaigns-image image-one"></div>
                 </div>
 
-                <div class="subsection__wrap">
+                <div class="subsection__wrapper">
                 <p class="site__button"><a href="" class="site__button-btn">See all our cakes</a></p>
                 </div>
 
@@ -141,8 +141,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div>
 
 <div class="news">
-    <div class="news__wrap">
-        <div class="news__wrap-inner">
+    <div class="news__wrapper">
+        <div class="news__wrapper-inner">
 
             <div class="section__title">
                     <h2 class="section__title-h">Latest news & views</h2>
@@ -189,8 +189,8 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
 </div>
 
 <div class="cards cards-six">
-    <div class="cards__wrap">
-        <div class="cards__wrap-inner">
+    <div class="cards__wrapper">
+        <div class="cards__wrapper-inner">
 
         <div class="card-item card-item-six">
                 <div class="card-body card-body-six">

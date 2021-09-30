@@ -1,4 +1,5 @@
 .cards {
+  background-color: $beige;
   &__wrapper {
     @extend .container;
 
@@ -16,7 +17,7 @@
     @extend .justify-content-between;
     @extend .text-center;
     @extend .col-lg-3;
-    background-color: $purple;
+    background-color: $brown;
     border-radius: 15px;
     margin: 1.5em;
   }
@@ -61,10 +62,10 @@
     margin-bottom: 1em;
 
     &-one {
-      background-color: $pink;
+      background-color: $orange;
     }
     &-two {
-      background-color: $marine;
+      background-color: $yellow;
     }
     &-three {
       background-color: $orange;

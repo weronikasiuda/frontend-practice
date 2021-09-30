@@ -14,7 +14,7 @@
     <div class="header__lower-wrapper">
         
         <div class="header__logo">
-            <h1 class="header__logo-h"><a href=""><img class="header__logo-img" src="content/CFY_Logo_Rose.png" alt="Sample alt text"></a></h1>
+            <h1 class="header__logo-h"><a href=""><img class="header__logo-img" src="content/cake-logo.jpeg" alt="Sample alt text"></a></h1>
         </div>
         <div class="header__nav">
             <a class="navbar-brand">
@@ -77,7 +77,7 @@
         <div class="header__contact">
             <ul class="contact-list">
                     <li class="contact__item"><a class="contact-link" href="tel:0123456789">0123456789</a></li>
-                    <li class="contact__item"><a class="contact-link" href="mailto:info@cakes.co.uk">info@cakes.co.uk</a></li>
+                    <li class="contact__item"><a class="contact-link" href="mailto:info@leedscakecompany.co.uk">info@leedscakecompany.co.uk</a></li>
                 </ul>
         </div>
 
