@@ -46,7 +46,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/includes/header.php';
                         </svg>
                         </span>
                     </div>
-                        <h2 class="card-title">For companies</h2>
+                        <h2 class="card-title">For companies lorem ipsum</h2>
                         <p class="card-text">Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
                     </div>
                     <a href="#" class="card-link  link-yellow">Lorem ipsum</a>
